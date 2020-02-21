@@ -1,6 +1,6 @@
 # template
 
-> My cool Nuxt.js project
+Simple template for Nuxt + Capacitor(android allready inside) + Vuetify
 
 ## Build Setup
 
@@ -12,11 +12,10 @@ $ npm install
 $ npm run dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+$ npm run lets-go
+$ npx cap copy
+$ npx cap open android (set your path in 'capacitor.config.json' ) 
 
-# generate static project
-$ npm run generate
-```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
