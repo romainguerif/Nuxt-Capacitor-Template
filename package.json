@@ -1,0 +1,28 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "My cool Nuxt.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lets-go": "npm run build-spa && npm run replace-relative-paths ;",
+    "build-spa": "nuxt build --spa",
+    "replace-relative-paths": "replace '/nuxtfiles/' 'nuxtfiles/' dist --recursive && replace '/assets/' 'nuxtfiles/' dist --recursive && replace '(href|src|\"href\"|\"src\")=\"/' '$1=\"../' dist --recursive && replace '(href|src|\"href\"|\"src\"):\"/' '$1:\"../' dist --recursive"
+  },
+  "dependencies": {
+    "@capacitor/android": "^1.5.0",
+    "@capacitor/cli": "^1.5.0",
+    "@capacitor/core": "^1.5.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0",
+    "deepmerge": "^4.2.2",
+    "fibers": "^4.0.2",
+    "replace": "1.1.0"
+  }
+}
