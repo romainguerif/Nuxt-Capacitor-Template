@@ -1,6 +1,6 @@
 # template
 
-Simple template for Nuxt + Capacitor(android allready inside) + Vuetify
+Simple template for Nuxt + Capacitor (android allready inside) + Vuetify
 
 ## Build Setup
 
